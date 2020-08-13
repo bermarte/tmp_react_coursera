@@ -1,52 +1,51 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay,
+    CardTitle,Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
-import { baseUrl } from '../shared/baseUrl';
-
-//functional component
-function RenderMenuItem ({dish, onClick}) {
-    return (
-        <Card>
-            <Link to={`/menu/${dish.id}`} >
-                <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
-                <CardImgOverlay>
-                    <CardTitle>{dish.name}</CardTitle>
-                </CardImgOverlay>
-            </Link>
-        </Card>
-    );
-}
-//functional component
-//other way
-const Menu = (props) => {
-    const menu = props.dishes.dishes.map((dish) => {
+import { baseUrl } from '../shared/baseURL';
+    function RenderMenuItem ({dish, onClick}) {
         return (
-            <div key={dish.id} className='col-12 col-md-5 mt-1'>
-                <RenderMenuItem dish={dish} />
-            </div>
+            <Card>
+                <Link to={`/menu/${dish.id}`} >
+                <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
+                    <CardImgOverlay>
+                        <CardTitle>{dish.name}</CardTitle>
+                    </CardImgOverlay>
+                </Link>
+            </Card>
         );
-    });
+    }
+    const Menu = (props) => {
 
-    if (props.dishes.isLoading) {
-        return(
-            <div className="container">
-                <div className="row">
-                    <Loading />
+        const menu = props.dishes.dishes.map((dish) => {
+            return (
+                <div className="col-12 col-md-5 m-1"  key={dish.id}>
+                    <RenderMenuItem dish={dish} onClick={props.onClick} />
                 </div>
-            </div>
-        );
-    }
-    else if (props.dishes.errMess) {
-        return(
-            <div className="container">
-                <div className="row">
-                    <h4>{props.dishes.errMess}</h4>
+            );
+        });
+        if (props.dishes.isLoading) {
+            return(
+                <div className="container">
+                    <div className="row">            
+                        <Loading />
+                    </div>
                 </div>
-            </div>
-        );
-    }
-    else
+            );
+        }
+        else if (props.dishes.errMess) {
+            return(
+                <div className="container">
+                    <div className="row"> 
+                        <div className="col-12">
+                            <h4>{props.dishes.errMess}</h4>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        else{
         return (
             <div className="container">
                 <div className="row">
@@ -64,6 +63,7 @@ const Menu = (props) => {
                 </div>
             </div>
         );
-}   
+        }
+    }
 
 export default Menu;

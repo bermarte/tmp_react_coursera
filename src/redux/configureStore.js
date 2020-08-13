@@ -1,15 +1,14 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { createForms } from 'react-redux-form';
-import { Dishes } from './dishes';
-import { Comments } from './comments';
-import { Leaders } from './leaders';
-import { Promotions } from './promotions';
-import { Feedback } from './feedback';
+import {createStore, combineReducers, applyMiddleware } from 'redux';
+import {Comments} from './CommentsReducer'
+import {Dishes} from './DishesReducer'
+import {Leaders} from './LeadersReducer'
+import {Promotions} from './PromotionsReducer'
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
-import { InitialFeedback } from './forms';
 
-export const configureStore = () => {
+import { createForms } from 'react-redux-form';
+import { InitialFeedback } from './Forms';
+
+export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
             dishes: Dishes,
@@ -17,13 +16,13 @@ export const configureStore = () => {
             promotions: Promotions,
             leaders: Leaders,
             ...createForms({
-                feedback: InitialFeedback,
-            }),
-            feedback: Feedback
+                feedback: InitialFeedback
+            })
         }),
-        //enhancer
-        //thunk and logger will be available inside the application
-        applyMiddleware(thunk, logger)
+        
+        applyMiddleware(thunk)
+        
     );
+
     return store;
 }

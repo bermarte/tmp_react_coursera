@@ -1,95 +1,68 @@
-install Yarn<br>
-```
-npm install -g yarn
-```
-https://en.reactjs.org/docs/getting-started.html
-```
-sudo npm install -g create-react-app@1.5.2
-create-react-app --help
-create-react-app confusion --scripts-version=react-scripts@1.1.4
-```
-to start the application:<br>
-```yarn start``` or ```npm start```
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-to install bootstrap component in react:<br>
-```
-yarn add bootstrap@4.0.0
-yarn add reactstrap@5.0.0
-yarn add react-popper@0.9.2
-```
-using nmp instead:
-```
-npm install bootstrap@4.0.0 reactstrap@5.0.0 react-popper@0.9.2 --save
-```
-install font awesome
-```
-yarn add font-awesome@4.7.0 --save
-```
-install Bootstrap's social media buttons
-```
-yarn add bootstrap-social@5.1.1 --save
-```
-install router
-```
-yarn add react-router-dom@4.2.2
-```
+## Available Scripts
 
-install redux (also possible npm install...)
-```
-yarn add redux@3.7.2
-yarn add react-redux@5.0.7
-yarn add react-redux-form@1.16.8
-```
-install thunk and logger
-```
-yarn add redux-thunk@2.2.0
-yarn add redux-logger@3.0.6
+In the project directory, you can run:
 
-```
-## start the project, dependencies
-```
-npm start
-```
-or
-```
-yarn start
-```
-build dependencies
-```
-npm install
-```
-or (creates also yarn.lock file)
-```
-yarn install
-```
-install json server as a global module
-```
-npm install -g json-server
-```
-how to use json-server with a delay of 2 seconds on port 3001
-```
-npx json-server --watch db.json -d 2000 -p 3001
-```
-or
-```
-json-server --watch db.json -d 2000 -p 3001
-```
-if json-server gives error, because it is not found, then follow these steps first
-```
-sudo su
-npm install -g json-server
-exit
-```
-install cross-fetch (a more compatible version of fetch)
-```
-yarn add cross-fetch@2.1.0
-```
-install animation packages (react-animation-components needs also prop-types)
-```
-yarn add react-transition-group@2.3.0
-yarn add react-animation-components@3.0.0
-yarn add prop-types@15.6.0
-```
-## deploy
-npm run build
+### `npm start`
 
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

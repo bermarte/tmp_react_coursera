@@ -203,20 +203,11 @@
       "date": "2011-12-02T17:57:28.556094Z"
     },
     {
-      "dishId": 1,
-      "rating": "4",
-      "author": "Jogesh Muppala",
-      "comment": "This is a comment",
-      "date": "2020-08-08T23:14:10.650Z",
-      "id": 20
-    },
-    {
       "dishId": 0,
-      "rating": "5",
-      "author": "pipp",
-      "comment": "cxcxcx",
-      "date": "2020-08-11T23:30:28.310Z",
-      "id": 21
+      "author": "palavi",
+      "comment": "not bad",
+      "date": "2019-05-01T16:32:46.047Z",
+      "id": 20
     }
   ],
   "promotions": [
@@ -279,6 +270,86 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    },
+    {
+      "firstname": "pl2",
+      "lastname": "2aa",
+      "telnum": "a@a.co",
+      "email": "123",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "a",
+      "id": 2
+    },
+    {
+      "firstname": "pal",
+      "lastname": "vet",
+      "telnum": "a2@a.co",
+      "email": "123",
+      "agree": false,
+      "contactType": "Email",
+      "message": "j",
+      "id": 3
+    },
+    {
+      "firstname": "poo",
+      "lastname": "poo",
+      "telnum": "k@k.co",
+      "email": "123",
+      "agree": false,
+      "contactType": "Email",
+      "message": "p",
+      "id": 4
+    },
+    {
+      "firstname": "aapoo",
+      "lastname": "poo",
+      "telnum": "p@p.com",
+      "email": "123",
+      "agree": false,
+      "contactType": "Email",
+      "message": "p",
+      "id": 5
+    },
+    {
+      "firstname": "pppp",
+      "lastname": "pppp",
+      "telnum": "p@p.com",
+      "email": "123",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "123",
+      "id": 6
+    },
+    {
+      "firstname": "ppp",
+      "lastname": "ppp",
+      "telnum": "p@p.co",
+      "email": "123",
+      "agree": true,
+      "contactType": "Email",
+      "message": "pa",
+      "id": 7
+    },
+    {
+      "firstname": "123",
+      "lastname": "123",
+      "telnum": "123@g.com",
+      "email": "123",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "a",
+      "id": 8
+    },
+    {
+      "firstname": "123@g.com",
+      "lastname": "a123@g.com",
+      "telnum": "123@g.com",
+      "email": "123",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "a",
+      "id": 9
     }
   ]
 }
